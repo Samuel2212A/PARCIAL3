@@ -22,6 +22,12 @@ def registrar_producto(productos, pedido, codigo, cantidad):
     else:
         print("El código del producto no es válido.")
 
+def agregar_producto(productos, pedido):
+    mostrar_productos(productos)
+    codigo = int(input("Ingrese el código del producto que desea agregar al pedido: "))
+    cantidad = int(input("Ingrese la cantidad que desea agregar: "))
+    registrar_producto(productos, pedido, codigo, cantidad)
+
 while True:
         print("\n==========")
         print("CAFETERIA")
@@ -42,4 +48,5 @@ while True:
              print("Opción inválida. Por favor, seleccione una opción válida.")
 
 mostrar_productos(productos)
-registrar_producto(productos, pedido)
+registrar_producto(productos, pedido, 1, 5)
+agregar_producto(productos, pedido)
