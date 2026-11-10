@@ -46,5 +46,5 @@ while True:
             break
 
 mostrar_productos(productos)
-registrar_producto(productos, pedido, 1, 5)
+registrar_producto(productos, pedido)
 agregar_producto(productos, pedido)
