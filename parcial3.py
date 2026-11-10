@@ -41,11 +41,9 @@ while True:
              mostrar_productos(productos)
         elif opcion == "2":
              agregar_producto(productos, pedido)
-        elif opcion == "3":
-             print("Pedido finalizado. Detalles del pedido:")
-             break
-        elif opcion != "1" and opcion != "2" and opcion != "3":
-             print("Opción inválida. Por favor, seleccione una opción válida.")
+        else:
+            print("Pedido finalizado.")
+            break
 
 mostrar_productos(productos)
 registrar_producto(productos, pedido, 1, 5)
