@@ -42,4 +42,4 @@ while True:
              print("Opción inválida. Por favor, seleccione una opción válida.")
 
 mostrar_productos(productos)
-registrar_producto(productos, pedido, 1, 5)
+registrar_producto(productos, pedido)
