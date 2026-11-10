@@ -16,7 +16,7 @@ def registrar_producto(productos, pedido, codigo, cantidad):
         nombre, precio, stock = productos[codigo]
         if stock >= cantidad:
             productos[codigo] = (nombre, precio, stock - cantidad)
-            pedido.append((nombre, precio, cantidad))
+            pedido.append((codigo, nombre, precio, cantidad))
         else:
             print("No hay suficiente stock para registrar el producto.")
     else:
